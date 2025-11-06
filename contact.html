@@ -1,0 +1,273 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.6.0/css/fontawesome.min.css" integrity="sha384-NvKbDTEnL+A8F/AA5Tc5kmMLSJHUO868P+lDtTpJIeQdGYaUIuLr4lVGOEA1OcMy" crossorigin="anonymous">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+</head>
+<body>
+    
+    <section class="sub-header">
+        <nav>
+
+            
+            <a href="index.html"><img src="logo.jpg" alt=""></a>
+            <div class="nav-links" id="navLinks">
+                 <i class="fa fa-times" onclick="hideMenu()"></i>
+                  <ul>
+                     <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="course.html">COURSE</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                     <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            
+        </nav>
+            <h1>Contact  Us</h1>
+
+      
+    </section>
+
+    <section class="location">
+       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d119037.38264232675!2d81.25567302613256!3d21.19540793352604!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a293cccec49ed45%3A0x2b3ff3bd73c91877!2sBhilai%2C%20Chhattisgarh!5e0!3m2!1sen!2sin!4v1759648217398!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+
+    <section class="contact-us">
+        <div class="row">
+            <div class="contact-col">
+                <div>
+                    <i class=" fa fa-home"></i>
+                    <span>
+                        <h5>XYZ Road,ABC Building</h5>
+                        <p>Banglore,Karnataka,IN</p>
+                    </span>
+                </div> 
+
+                 <div>
+                    <i class=" fa fa-phone"></i>
+                    <span>
+                        <h5>+1 123456789</h5>
+                        <p>Monday to Saturday,10AM TO 6PM</p>
+                    </span>
+                </div> 
+
+                 <div>
+                    <i class=" fa fa-envelope-o"></i>
+                    <span>
+                        <h5>info@abcd.com</h5>
+                        <p>Email us your query</p>
+                    </span>
+                </div> 
+            </div>
+             <div class="contact-col">
+
+                <form action="form.php" method="post">
+                    <input type="text" name="name" placeholder="Enter Your name" required>
+                    <input type="email" name="email" placeholder="Enter email address" required>
+                    <input type="text"  name="subject" placeholder="Enter Your subject" required>
+
+                    <textarea rows="8"  name="Message"></textarea>
+                    <button type="submit" class="hero-btn red-btn">Send Message</button>
+                </form>
+             </div>
+        </div>
+    </section>
+
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis maiores in quis doloribus libero ipsum animi at eveniet magni. Laudantium veritatis id ex, esse nisi corporis suscipit voluptatum officiis cumque impedit sapiente a praesentium magni eius! Ad ipsam voluptate architecto error ullam sit dolor iste doloribus inventore. Ullam, distinctio corporis?</p>
+        <div class="icons">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-linkedin"></i>
+            
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+       
+    </section>
+
+    
+<script>
+    var navLinks = document.getElementById("navLinks");
+
+    function showMenu() {
+        navLinks.style.right = "0";
+    }
+
+    function hideMenu() {
+        navLinks.style.right = "-200px";
+    }
+
+    // ✅ Close menu automatically when a link is clicked
+    const navItems = document.querySelectorAll(".nav-links ul li a");
+    navItems.forEach(link => {
+        link.addEventListener("click", () => {
+            hideMenu();
+        });
+    });
+</script>
+</body>
+</html> -->
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us</title>
+  <link rel="stylesheet" href="index.css" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+  />
+</head>
+
+<body>
+  <section class="sub-header">
+    <nav>
+      <a href="index.html"><img src="logo.jpg" alt="Logo" /></a>
+
+      <!-- ✅ Menu links -->
+      <div class="nav-links" id="navLinks">
+        <i class="fa fa-times" onclick="hideMenu()"></i>
+        <ul>
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="about.html">ABOUT</a></li>
+          <li><a href="course.html">COURSE</a></li>
+          <li><a href="blog.html">BLOG</a></li>
+          <li><a href="contact.html">CONTACT</a></li>
+        </ul>
+      </div>
+
+      <!-- ✅ Menu icon now inside nav, visible on all pages -->
+      <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+
+    <h1>Contact Us</h1>
+  </section>
+
+  <section class="location">
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d119037.38264232675!2d81.25567302613256!3d21.19540793352604!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a293cccec49ed45%3A0x2b3ff3bd73c91877!2sBhilai%2C%20Chhattisgarh!5e0!3m2!1sen!2sin!4v1759648217398!5m2!1sen!2sin"
+      width="600"
+      height="450"
+      style="border: 0"
+      allowfullscreen=""
+      loading="lazy"
+    ></iframe>
+  </section>
+
+  <section class="contact-us">
+    <div class="row">
+      <div class="contact-col">
+        <div>
+          <i class="fa fa-home"></i>
+          <span>
+            <h5>XYZ Road, ABC Building</h5>
+            <p>Bangalore, Karnataka, IN</p>
+          </span>
+        </div>
+
+        <div>
+          <i class="fa fa-phone"></i>
+          <span>
+            <h5>+1 123456789</h5>
+            <p>Monday to Saturday, 10AM to 6PM</p>
+          </span>
+        </div>
+
+        <div>
+          <i class="fa fa-envelope-o"></i>
+          <span>
+            <h5>info@abcd.com</h5>
+            <p>Email us your query</p>
+          </span>
+        </div>
+      </div>
+
+      <div class="contact-col">
+        <form action="form.php" method="post">
+          <input type="text" name="name" placeholder="Enter Your name" required />
+          <input type="email" name="email" placeholder="Enter email address" required />
+          <input type="text" name="subject" placeholder="Enter Your subject" required />
+          <textarea rows="8" name="Message" placeholder="Message"></textarea>
+          <button type="submit" class="hero-btn red-btn">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <section class="footer">
+    <h4>About Us</h4>
+    <p>
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis maiores in quis doloribus libero ipsum animi
+      at eveniet magni. Laudantium veritatis id ex, esse nisi corporis suscipit voluptatum officiis cumque impedit
+      sapiente a praesentium magni eius! Ad ipsam voluptate architecto error ullam sit dolor iste doloribus inventore.
+      Ullam, distinctio corporis?
+    </p>
+    <div class="icons">
+      <i class="fa fa-facebook"></i>
+      <i class="fa fa-twitter"></i>
+      <i class="fa fa-instagram"></i>
+      <i class="fa fa-linkedin"></i>
+    </div>
+  </section>
+
+  <!-- <script>
+    var navLinks = document.getElementById("navLinks");
+
+    function showMenu() {
+      navLinks.style.right = "0";
+    }
+
+    function hideMenu() {
+      navLinks.style.right = "-200px";
+    }
+
+    // ✅ Close menu automatically when a link is clicked
+    const navItems = document.querySelectorAll(".nav-links ul li a");
+    navItems.forEach((link) => {
+      link.addEventListener("click", () => {
+        hideMenu();
+      });
+    });
+  </script> -->
+
+  <script>
+    var navLinks = document.getElementById("navLinks");
+
+    function showMenu() {
+      navLinks.style.right = "0";
+    }
+
+    function hideMenu() {
+      navLinks.style.right = "-200px";
+    }
+
+    // ✅ Close menu automatically when a link is clicked
+    const navItems = document.querySelectorAll(".nav-links ul li a");
+    navItems.forEach(link => {
+      link.addEventListener("click", hideMenu);
+    });
+
+    // ✅ Close menu when clicking anywhere outside it
+    document.addEventListener("click", function(event) {
+      const isClickInsideMenu = navLinks.contains(event.target);
+      const isMenuButton = event.target.classList.contains("fa-bars");
+      if (!isClickInsideMenu && !isMenuButton) {
+        hideMenu();
+      }
+    });
+  </script>
+</body>
+</html>
